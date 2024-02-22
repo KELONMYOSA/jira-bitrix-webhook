@@ -14,7 +14,6 @@ git clone https://github.com/KELONMYOSA/jira-bitrix-webhook.git
 
 ```
 BITRIX_WEBHOOK=https://bitrix.company.com/webhook
-JIRA_URL=https://jira.atlassian.net
 ```
 
 ### 3. Создать SQLite базу данных из SQL файла
