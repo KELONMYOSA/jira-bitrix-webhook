@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  jira_bitrix_webhook:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: jira_bitrix_webhook
+    container_name: jira_bitrix_webhook
+    volumes:
+      - ./src/db/database.sqlite:/app/src/db/database.sqlite
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
